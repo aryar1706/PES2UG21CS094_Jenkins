@@ -16,11 +16,12 @@ pipeline{
     }
     stage('Test'){
       steps{
-        sh './non_existing_command'
+        sh './output'
       }
     }
     stage('Deploy'){
       steps{
+        sh './non_existing_command'
         echo 'deploy'
       }
     }
